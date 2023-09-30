@@ -53906,6 +53906,8 @@ Vy(a,b){var s,r,q,p
 for(s=0;s<3;++s){for(r=0,q=0;q<3;++q)if(a[s][q]===b)++r
 if(r===3)return!0}for(q=0;q<3;++q){for(r=0,s=0;s<3;++s)if(a[s][q]===b)++r
 if(r===3)return!0}for(r=0,p=0;p<3;++p)if(a[p][p]===b)++r
+if(r===3)return!0
+for(r=0,p=0;p<3;++p)if(a[p][3-p-1]===b)++r
 return r===3&&!0},
 Hd(a){var s,r,q=this.c
 q.toString
